@@ -12,19 +12,20 @@ module.exports = grunt => {
 	// Project configuration
 	grunt.initConfig({
 		pkg: grunt.file.readJSON('package.json'),
-		meta: {
-			banner:
-				'/*!\n' +
-				' * reveal.js <%= pkg.version %> (<%= grunt.template.today("yyyy-mm-dd, HH:MM") %>)\n' +
-				' * http://revealjs.com\n' +
-				' * MIT licensed\n' +
-				' *\n' +
-				' * Copyright (C) 2019 Hakim El Hattab, http://hakim.se\n' +
-				' */'
-		},
 
-		qunit: {
-			files: [ 'test/*.html' ]
+		postcss: {
+			options: {
+				processors: [
+					require('tailwindcss')('./tailwind.config.js')
+				]
+			},
+			dist: {
+				expand: true,
+				cwd: './css',
+				src: ['**/*.css'],
+				dest: './css',
+				ext: '.css'
+			}
 		},
 
 		uglify: {
@@ -47,6 +48,10 @@ module.exports = grunt => {
 				src: 'css/reveal.scss',
 				dest: 'css/reveal.css'
 			},
+			custom: {
+				src: 'css/custom.scss',
+				dest: 'css/custom.css'
+			},
 			themes: {
 				expand: true,
 				cwd: 'css/theme/source',
@@ -59,6 +64,9 @@ module.exports = grunt => {
 		autoprefixer: {
 			core: {
 				src: 'css/reveal.css'
+			},
+			custom: {
+				src: 'css/custom.css'
 			}
 		},
 
@@ -142,7 +150,7 @@ module.exports = grunt => {
 				tasks: 'css-themes'
 			},
 			css: {
-				files: [ 'css/reveal.scss' ],
+				files: [ 'css/reveal.scss', 'css/custom.scss' ],
 				tasks: 'css-core'
 			},
 			test: {
@@ -162,6 +170,8 @@ module.exports = grunt => {
 
 	});
 
+	grunt.loadNpmTasks('grunt-postcss');
+
 	// Default task
 	grunt.registerTask( 'default', [ 'css', 'js' ] );
 
@@ -172,18 +182,15 @@ module.exports = grunt => {
 	grunt.registerTask( 'css-themes', [ 'sass:themes' ] );
 
 	// Core framework CSS
-	grunt.registerTask( 'css-core', [ 'sass:core', 'autoprefixer', 'cssmin' ] );
+	grunt.registerTask( 'css-core', [ 'sass:core', 'sass:custom', 'postcss', 'autoprefixer', 'cssmin' ] );
 
 	// All CSS
-	grunt.registerTask( 'css', [ 'sass', 'autoprefixer', 'cssmin' ] );
+	grunt.registerTask( 'css', [ 'sass', 'postcss', 'autoprefixer', 'cssmin' ] );
 
 	// Package presentation to archive
 	grunt.registerTask( 'package', [ 'default', 'zip' ] );
 
 	// Serve presentation locally
 	grunt.registerTask( 'serve', [ 'connect', 'watch' ] );
-
-	// Run tests
-	grunt.registerTask( 'test', [ 'jshint', 'qunit' ] );
 
 };

@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import '/node_modules/@fortawesome/fontawesome-free/css/all.css';
+@import '/node_modules/highlight.js/styles/an-old-hope.css';
+@import './font.css';
+
+.reveal {
+    .fas, .far, .fab {
+        font-weight: normal !important;
+    }
+
+    .slides section h2[data-vertical-align-top]{
+        top: 0 !important;
+    }
+
+    pre {
+        @apply m-4 mt-12 w-full overflow-hidden text-base;
+
+        code {
+            padding: 1rem;
+            line-height: 1.5;
+
+            font-family: 'Fira Code', monospace !important;
+
+            max-height: 100%;
+        }
+    }
+}
