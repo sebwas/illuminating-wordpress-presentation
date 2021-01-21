@@ -32,7 +32,7 @@
     "load-grunt-tasks": "^4.0.0",
     "mustache": "^2.3.0",
     "node-sass": "^4.13.0",
-    "socket.io": "^2.3.0"
+    "socket.io": "^2.4.0"
   },
   "dependencies": {
     "grunt-postcss": "^0.9.0",
