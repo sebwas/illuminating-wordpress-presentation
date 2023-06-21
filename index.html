@@ -1,719 +1,730 @@
 <!doctype html>
 <html>
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-
-		<title>Illuminating WordPress</title>
-
-		<link rel="stylesheet" href="css/reset.css" />
-		<link rel="stylesheet" href="css/reveal.css" />
-
-		<link rel="stylesheet" href="css/theme/black.css" media="(prefers-color-scheme: dark)" />
-		<link rel="stylesheet" href="css/theme/white.css" media="(prefers-color-scheme: light)" />
-
-		<link
-			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/an-old-hope.min.css"
-			media="(prefers-color-scheme: dark)"
-		/>
-
-		<link
-			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/stackoverflow-light.min.css"
-			media="(prefers-color-scheme: light)"
-		/>
-
-		<link rel="stylesheet" href="css/custom.css" />
-
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
-	</head>
-
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section class="h-full">
-					<div class="h-full w-full flex flex-wrap items-center justify-center">
-						<h1 class="font-normal flex items-baseline justify-center">
-							<span class="text-6xl">
-								Illuminating
-							</span>
-
-							<span style="min-width: 12rem" class="ml-8 -mr-8">
-								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 65 65" width="100%" height="100%" class="fill-current">
-									<path d="M54.6 12.9L37.1 6.5 30.3 1C29.2.1 27.9-.3 26.6-.3c-1.8 0-3.4.8-4.5 2.1l-.7.8c-1 1.2-1.5 2.7-1.3 4.3.2 1.6.9 3 2.1 4l3 2.5L11 30.5c-.6-.2-1.2-.4-1.8-.4-2.5 0-4.5 2-4.5 4.5s2 4.5 4.5 4.5c.3 0 .7 0 1-.1l11.1 20.1H8.9c-1.2 0-2.3.7-2.7 1.8l-2.1 4.5H41L38.9 61c-.5-1.1-1.5-1.8-2.7-1.8H23L11.6 38.4c.1-.1.2-.1.3-.2 1.2-.9 1.9-2.2 1.9-3.7 0-1.2-.5-2.3-1.3-3.2l-.1-.1 14.1-17 2.5 2.1 9.8 15.8 4.4-5.3c.9.7 2.1 1.1 3.2 1.1 1.6 0 3-.7 4-1.9l.6-.7c1.8-2.2 1.5-5.4-.6-7.3l4.2-5.1zm-17 48.6l1.1 2.3H6.4l1.1-2.4c.2-.5.8-.9 1.3-.9h27.3c.7.1 1.2.5 1.5 1zM11 37.1c-.5.4-1.1.6-1.7.6-1.7 0-3-1.3-3-3s1.3-3 3-3c.8 0 1.6.3 2.1.9.6.6.9 1.3.9 2.1-.1.9-.5 1.8-1.3 2.4zM21.6 6.7c-.1-1.2.2-2.3 1-3.2l.7-.8c.8-1 2.1-1.6 3.4-1.6 1 0 2 .4 2.8 1l6.2 5.1-6.2 7.6-6.2-5.1c-1.1-.7-1.6-1.8-1.7-3zm8.8 9.2L36.9 8l15.2 5.5-3 3.7-10.2 12.4-8.5-13.7zm19.3 8.6l-.6.7c-.7.9-1.7 1.3-2.9 1.3-.8 0-1.6-.3-2.3-.8l5.3-6.4c1.6 1.4 1.8 3.6.5 5.2z"/>
-									<path fill="#ff0" d="M45.5 31.5H47v5.3h-1.5zM56.074 32.98l-3.748-3.748 1.06-1.06 3.748 3.747zM55.6 21.4h5.3v1.5h-5.3z"/>
-									<path d="M31.841 6.079l1.141.974-.974 1.14-1.14-.973zM29.577 4.078l1.141.974-.974 1.14-1.14-.973z"/>
-								</svg>
-							</span>
-
-							<span class="text-6xl">
-								WordPress
-							</span>
-						</h1>
-					</div>
-				</section>
-
-				<section>
-					<section>
-						<h1
-							class="fragment fade-in animated move-to-middle-top scale-down"
-							data-animated-scale-down-to="0.5"
-							data-animated-duration="300"
-							data-fragment-index="2"
-						>
-							<i class="fab fa-wordpress text-20xl block"></i>
-
-							<p
-								class="fragment fade-in-then-semi-out text-8xl hide-after-fragment-hidden"
-								data-fragment-index="1"
-							>
-								34.9%
-							</p>
-						</h1>
-
-						<ul class="inline-block w-auto text-left" style="margin-top: -20rem;">
-							<li class="fragment fade-in-then-semi-out">
-								blog
-
-								<span class="fragment">(d'uh)</span>
-							</li>
-
-							<li class="fragment fade-in-then-semi-out">content management</li>
-
-							<li class="fragment fade-in-then-semi-out">e-commerce</li>
-						</ul>
-
-						<aside class="notes" data-markdown>
-							- 34.9% as of 1st of October 2019
-							- Very versatile
-							- Can be used for virtually everything
-								- blog (d'uh!)
-								- all kinds of content management
-								- e-commerce
-							- Shouldn't though
-							- Elaborate about first job:
-								- 6m daily active users
-								- WordPress CMS + clicking user frontend
-						</aside>
-					</section>
-
-					<section>
-						<h2 class="fragment">How?</h2>
-
-						<p class="fragment text-left px-48" style="margin-top: 5rem">
-							Extensive use of:
-						</p>
-
-						<ul class="text-left">
-							<li class="fragment">filters</li>
-							<li class="fragment">actions (technically also filters)</li>
-						</ul>
-					</section>
-
-					<section>
-						<h2 class="fragment">
-							What does that look like?
-						</h2>
-
-						<pre class="fragment"><code class="php" data-trim data-noescape>
-							add_action(
-							  'after_setup_theme', // action / filter name
-							  [$this, 'removeZoomFromGallery'], // callback
-							  99, // priority
-							  2 // accepted argument count
-							);
-						</code></pre>
-					</section>
-
-					<section>
-						<h2>
-							<span class="fragment fade-in-then-semi-out">What does that look like</span>
-							<span class="fragment fade-in">in real life?</span>
-						</h2>
-
-						<pre class="fragment"><code
-							class="php"
-							data-trim data-noescape
-							style="font-size: 10px; line-height: 1;"
-						>
-							add_filter('wp_print_styles', [$this, 'dequeueUnusedAssets'], 99);
-							add_filter('wp_enqueue_scripts', [$this, 'dequeueUnusedAssets'], 99);
-							add_filter('after_setup_theme', [$this, 'removeZoomFromGallery'], 99);
-							add_filter('init', [$this, 'addProductBrandPostType']);
-							add_filter('add_meta_boxes_product_brand', [$this, 'addProductBrandMetaBoxes']);
-							add_filter('save_post', [$this, 'saveProductBrandMetaBoxData']);
-							add_filter('init', [$this, 'addProductFunctionPostType']);
-							add_filter('add_meta_boxes_product_function', [$this, 'addProductFunctionMetaBoxes']);
-							add_filter('save_post', [$this, 'saveProductFunctionMetaBoxData']);
-							add_filter('woocommerce_template_single_price', [$this, 'showPriceNotice'], 10);
-							add_filter('woocommerce_after_add_to_cart_quantity', [$this, 'showShippingMethod'], 35);
-							add_filter('woocommerce_single_product_summary', [$this, 'showDivider'], 31);
-							add_filter('woocommerce_single_product_summary', [$this, 'showReturnAndShippingInfo'], 40);
-							add_filter('woocommerce_single_product_summary', [$this, 'showDivider'], 41);
-							add_filter('woocommerce_single_product_summary', [$this, 'showPaymentGateways'], 45);
-							add_filter('woocommerce_single_product_summary', [$this, 'showDivider'], 49);
-							add_filter('woocommerce_single_product_summary', [$this, 'showInteractionButtons'], 50);
-							add_filter('woocommerce_after_single_product_summary', [$this, 'showDivider'], 10);
-							add_filter('woocommerce_after_single_product_summary', [$this, 'showDescription'], 11);
-							add_filter('woocommerce_after_single_product_summary', [$this, 'showProductDetails'], 15);
-							add_filter('woocommerce_after_single_product_summary', [$this, 'showOtherProductsFromSameBrand'], 53);
-							add_filter('woocommerce_after_single_product_summary', [$this, 'showDivider'], 54);
-							add_filter('woocommerce_after_single_product_summary', [$this, 'showFaqArea'], 55);
-							add_filter('woocommerce_after_single_product_summary', [$this, 'showDivider'], 56);
-							add_filter('woocommerce_after_single_product_summary', [$this, 'showNewsletterForm'], 60);
-							add_filter('woocommerce_single_product_image_thumbnail_html', [$this, 'showBrandLogoAndFunctionSymbol'], 10, 2);
-
-							add_filter('init', function() {
-							  remove_filter('woocommerce_single_product_summary', 'woocommerce_output_product_data_tabs', 35);
-							  remove_filter('woocommerce_after_single_product_summary', 'woocommerce_output_related_products', 20);
-							  remove_filter('woocommerce_single_product_summary', 'sf_product_share', 45);
-							  remove_filter('woocommerce_single_product_summary', 'woocommerce_template_single_meta', 40);
-							  add_filter('woocommerce_after_single_product_summary', 'woocommerce_output_related_products', 50);
-							}, 99);
-						</code></pre>
-					</section>
-
-					<section>
-						<p class="text-6xl">
-							... and that's only <strong>one</strong> feature.
-						</p>
-					</section>
-				</section>
-
-				<section>
-					<section>
-						<p class="text-6xl">
-							Downsides of
-
-							<i class="fab fa-wordpress"></i>
-						</p>
-
-						<aside class="notes" data-markdown>
-							- The way WordPress does it makes it convoluted, hard to read and hard to maintain
-						</aside>
-					</section>
-
-					<section>
-						<p
-							class="fragment animated move-to-middle-top text-6xl"
-							data-animated-duration="300"
-							data-fragment-index="1"
-						>
-							No templating engine
-						</p>
-
-						<pre class="fragment" data-fragment-index="1"><code class="php" data-trim data-noescape>
-							&lt;main id="main" class="site-main"&gt;
-							  &lt;?php
-							  if ( have_posts() ) {
-							    // Load posts loop.
-							    while ( have_posts() ) {
-							      the_post();
-							      get_template_part( 'template-parts/content/content' );
-							    }
-							    // Previous/next page navigation.
-							    twentynineteen_the_posts_navigation();
-							  } else {
-							    // If no content, include the "No posts found" template.
-							    get_template_part( 'template-parts/content/content', 'none' );
-							  }
-							  ?&gt;
-							&lt;/main&gt;<!-- .site-main -->
-						</code></pre>
-
-						<aside class="notes" data-markdown data-trim>
-							No templating engine
-							=> raw PHP mixed with HTML
-							=> hard to maintain and to write
-						</aside>
-					</section>
-
-					<section>
-						<p
-							class="fragment animated move-to-middle-top text-6xl"
-							data-animated-duration="300"
-							data-fragment-index="1"
-						>
-							hardcoded file names<br />
-							<span
-								class="fragment fade-in-then-semi-out"
-								data-fragment-index="0"
-							>
-								(more or less)
-							</span>
-						</p>
-
-						<ul
-							class="fragment text-3xl text-left"
-							data-fragment-index="1"
-						>
-							<li class="fragment highlight-red">index.php</li>
-							<li class="fragment highlight-red">style.css</li>
-							<div class="fragment highlight-blue">
-								<li class="mt-6">header.php</li>
-								<li>footer.php</li>
-								<li>404.php</li>
-								<li>comments.php</li>
-								<li class="mt-6">...</li>
-							</div>
-						</ul>
-
-						<aside class="notes" data-markdown data-trim>
-							- No (real) way to change template names. These are required:
-								- style.css (as the stylesheet)
-								- index.php (as the main template)
-							- List of recognized (= special meaning):
-								- header.php
-								- footer.php
-								- 404.php
-								- comments.php
-								- more...
-							- Can't apply custom structure
-						</aside>
-					</section>
-				</section>
-
-				<section>
-					<section>
-						<p class="text-6xl">
-							Getting <code class="text-red-700">blade</code> on board
-						</p>
-					</section>
-
-					<section>
-						<p>
-							Add required composer packages ...
-
-							<pre class="fragment mt-16"><code class="json" data-trim data-noescape>
-								{
-									// ...
-									"require": {
-										"illuminate/support": "^5",
-										"illuminate/view": "^5"
-									}
-									// ...
-								}
-							</code></pre>
-						</p>
-					</section>
-
-					<section>
-						<p>
-							... and assemble.
-						</p>
-
-						<div
-							class="fragment h-full bg-current"
-							style="
-								mask: url(./img/ikea-man.png);
-								mask-size: contain;
-								mask-clip: border-box;
-								mask-position: center;
-								mask-repeat: no-repeat;
-								-webkit-mask: url(./img/ikea-man.png);
-								-webkit-mask-size: contain;
-								-webkit-mask-clip: border-box;
-								-webkit-mask-position: center;
-								-webkit-mask-repeat: no-repeat;
-							"
-						>
-							<img
-								src="./img/ikea-man.png"
-								alt="IKEA assembly man"
-								class="h-auto invisible"
-								width="170"
-							/>
-						</div>
-
-						<aside class="notes" data-markdown data-trim>
-							- For everyone who doesn't know: this is the man from IKEA manuals
-						</aside>
-					</section>
-
-					<section>
-						<p class="text-6xl">
-							Register services
-						</p>
-					</section>
-
-					<section>
-						<pre class="mt-16"><code class="php" data-trim data-noescape>
-							$this->container = new \Illuminate\Container\Container;
-
-							$this->container->singleton('files', function() {
-							  return new \Illuminate\Filesystem\Filesystem;
-							});
-
-							$this->container->singleton('events', function() {
-							  return new \Illuminate\Events\Dispatcher;
-							});
-						</code></pre>
-
-						<aside class="notes" data-markdown data-trim>
-							- The Filesystem is needed for obvious reasons
-							- The event system is needed for some internal event mechanisms, e.g. for view composers
-						</aside>
-					</section>
-
-					<section>
-						<pre class="mt-16"><code class="php" data-trim data-noescape>
-							$this->container->singleton('blade.compiler', function() {
-							  return new \Illuminate\View\Compilers\BladeCompiler(
-							    $this->container['files'], // Filesystem
-							    $this->cachePath // Configured value
-							  );
-							});
-						</code></pre>
-
-						<aside class="notes" data-markdown data-trim>
-							- Here we register the engines for both, `.php` and `.blade.php` files
-							- As well as the resolver to invoke the right engine for the requested file
-						</aside>
-					</section>
-
-					<section>
-						<pre class="mt-16"><code class="php" data-trim data-noescape>
-							$this->container->singleton('view.engine.resolver', function() {
-							  $resolver = new \Illuminate\View\Engines\EngineResolver;
-							  <span class="fragment">
-							  $resolver->register('php', function() {
-							    return new \Illuminate\View\Engines\PhpEngine;
-							  });
-							  </span><span class="fragment">
-							  $resolver->register('blade', function() {
-							    return new \Illuminate\View\Engines\CompilerEngine(
-							      $this->container['blade.compiler'],
-							      $this->container['files'] // Filesystem
-							    );
-							  });
-							  </span>
-							  return $resolver;
-							});
-						</code></pre>
-
-						<aside class="notes" data-markdown data-trim>
-							- Here we register the engines for both, `.php` and `.blade.php` files
-							- As well as the resolver to invoke the right engine for the requested file
-						</aside>
-					</section>
-
-					<section>
-						<pre class="mt-16"><code class="php" data-trim data-noescape>
-							$this->container->singleton('view.finder', function() {
-							  return new FileViewFinder(
-								$this->container['files'], // Filesystem
-								$this->viewPaths // Configured value
-							  );
-							});
-						</code></pre>
-
-						<aside class="notes" data-markdown data-trim>
-							-
-						</aside>
-					</section>
-
-					<section>
-						<pre class="mt-16"><code class="php" data-trim data-noescape>
-							$this->factory = new Factory(
-							  $this->container['view.engine.resolver'],
-							  $this->container['view.finder'],
-							  $this->container['events']
-							);
-
-							$this->factory->setContainer($this->container);
-						</code></pre>
-
-						<aside class="notes" data-markdown data-trim>
-							- Build the factory which will ultimately return the views
-						</aside>
-					</section>
-
-					<section>
-						<h3>
-							Done
-
-							<span class="fragment">
-								(almost)
-							</span>
-						</h3>
-					</section>
-
-					<section>
-						<p class="text-6xl">
-							At least we can do this now:
-						</p>
-
-						<pre class="mt-16"><code class="php" data-trim data-noescape style="font-size: 1.5rem; line-height: 2.2;">
-							echo $this->factory
-								->make('my.view')
-								->render()
-						</code></pre>
-					</section>
-				</section>
-
-				<section>
-					<section>
-						<p class="text-6xl">
-							Okay, we have pretty views.
-						</p>
-
-						<p class="fragment text-6xl">
-							What now?
-						</p>
-
-						<aside class="notes" data-markdown data-trim>
-							- We still haven't solved the problem of the arbitrary names and structure of the theme
-						</aside>
-					</section>
-
-					<section>
-						<p class="text-6xl">Problems:</p>
-
-						<ul>
-							<li class="fragment">Arbitrary names</li>
-							<li class="fragment">No way to configure them</li>
-							<li class="fragment mt-8">... but there is a solution:</li>
-						</ul>
-
-						<aside class="notes" data-markdown data-trim>
-							- WordPress uses arbitrary names to designate meaning to some files
-						</aside>
-					</section>
-
-					<section>
-						<img
-							src="/img/hackerman.webp"
-							alt="Hackerman"
-							style="margin: 2rem auto; border: 0;"
-						/>
-					</section>
-
-					<section>
-						<p class="text-5xl fragment fade-in-then-semi-out">Simplified WordPress life cycle</p>
-
-						<p class="fragment mt-20">Check URL</p>
-
-						<div class="fragment">
-							<span class="text-center block text-6xl">&darr;</span>
-
-							<p>Determine kind of data</p>
-						</div>
-
-						<div class="fragment">
-							<span class="text-center block text-6xl">&darr;</span>
-
-							<p>Determine template to load</p>
-						</div>
-
-						<aside class="notes" data-markdown data-trim>
-							- Take a look at the URL
-							- Determine the kind of data we'll fetch from the database
-							- Decide which template to load / fallback to
-						</aside>
-					</section>
-
-					<section>
-						<pre class="mt-16"><code class="php" data-trim data-noescape style="line-height: 2.2; font-size: 1.5rem">
-							apply_filter(
-								"{$type}_template",
-								string $template,
-								string $type,
-								array $templates
-							)
-						</code></pre>
-
-						<p class="mt-6 text-6xl">... to the rescue</p>
-
-						<aside class="notes" data-markdown data-trim>
-							- WordPress can be intercepted when trying to get the right template file
-							- Type, e.g.:
-							  - index
-							  - 404
-							  - archive
-							  - author
-							  - category
-							  - ...
-						</aside>
-					</section>
-
-					<section>
-						<pre class="mt-16"><code class="php" data-trim data-noescape style="font-size: 1.4rem; line-height: 1.6;">
-							// Default supported types by WordPress:
-							$templateTypes = [
-								'index', '404', 'archive', 'author', 'category',
-								'taxonomy', 'date', 'embed', 'home', 'frontpage',
-								'privacypolicy', 'page', 'paged', 'search',
-								'singular', 'attachment', 'single', 'tag',
-							];
-
-							foreach($templateTypes as $templateType) {
-							    add_filter(
-							        "{$templateType}_template",
-							        fn($template, $type, $templates) =>
-							            $this->handleTemplateRequest($template),
-							        99,
-							        3
-							    );
-							}
-						</code></pre>
-
-						<aside class="notes" data-markdown data-trim>
-							- Just add a filter for every template type there is, yay
-						</aside>
-					</section>
-
-					<section>
-						<pre class="mt-16"><code class="php" data-trim data-noescape style="font-size: 1.4rem; line-height: 1.6;">
-							public function handleTemplateRequest($template) {
-							    $this->desiredTemplate = $template;
-
-							    <span class="fragment">// Here we can decide if we want to intercept or not.
-							    // Now we have full flexibility with naming, etc. Yay!
-							    if (
-							        get_option('maintenance_mode', false) &&
-							        !is_user_logged_in()
-							    ) {
-							        $this->desiredTemplate = 'pages.maintenance';
-							    }</span>
-
-							    <span class="fragment">return dirname(__DIR__) . '/index.php';</span>
-							}
-						</code></pre>
-
-						<aside class="notes" data-markdown data-trim>
-							- Just save the desired template or assign a new one
-							- And then let's return the (anyway required) `index.php` template
-						</aside>
-					</section>
-
-					<section>
-						<h3>
-							Almost there!
-						</h3>
-					</section>
-
-					<section>
-						<p class="text-6xl">
-							the full <code class="text-5xl ml-2">index.php</code>
-						</p>
-
-						<pre class="mt-16"><code class="php" data-trim style="font-size: 1.4rem; line-height: 1.6;">
-							&lt;?php
-
-							// Make sure we have no direct contact
-							!defined('ABSPATH') && die('Safety first!');
-
-							// Render page
-							echo \IlluminatedWordPressTheme\TemplatePage::render();
-						</code></pre>
-
-						<aside class="notes" data-markdown data-trim>
-							- Safety there, because of the way WordPress handles templates / themes, etc (all publicly available)
-						</aside>
-					</section>
-
-					<section>
-						<pre class="mt-16"><code class="php" data-trim data-noescape style="font-size: 1.4rem; line-height: 1.6;">
-							namespace IlluminatedWordPressTheme;
-
-							class TemplatePage {
-							    private $template;
-
-							    private function __construct($template) {
-							        $this->template = $template;
-							    }
-
-							    public static function render() {
-							        return (new static)->renderPage(
-							            // The class that registered all the filters
-							            ViewController::getInstance()->getTemplate()
-							        );
-							    }
-							}
-						</code></pre>
-					</section>
-
-					<section>
-						<pre class="mt-16"><code class="php" data-trim data-noescape style="font-size: 1.4rem; line-height: 1.6;">
-							public function renderPage() {
-							    $data = $this->getData();
-
-							    if (!View::make()->exists("templates.{$this->template}")) {
-							        $this->template = 'index';
-							    }
-
-							    return View::view("templates.{$this->template}")
-							        ->with($data)
-							        ->render();
-							}
-						</code></pre>
-					</section>
-				</section>
-
-				<section>
-					<p class="text-8xl text-center">
-						We solved our problems and made our lives easier.<br />
-						<i class="fas fa-smile-beam"></i>
-						<i class="fas fa-smile-beam"></i>
-						<i class="fas fa-smile-beam"></i>
-					</p>
-				</section>
-
-				<section class="h-full">
-					<div class="h-full text-left flex-wrap content-between flex py-12">
-						<div>
-							<h1>
-								<span class="text-6xl">Sebastian Wasser</span>
-							</h1>
-
-							<p class="align-middle">
-								<i class="fab fa-github"></i><code>/sebwas</code>
-							</p>
-						</div>
-
-						<div>
-							<h5 class="leading-none">
-								<span class="text-2xl">Attributions & sources:</span>
-							</h5>
-
-							<p class="text-lg -mt-4" data-markdown>
-								WordPress share: [https://w3techs.com/technologies/details/cm-wordpress/all/all](https://w3techs.com/technologies/details/cm-wordpress/all/all)
-							</p>
-
-							<p class="text-lg -mt-4" data-markdown>
-								Table lamp by Creative Stall from [the Noun Project](https://thenounproject.com/search/?q=desk%20lamp&i=981470). The original work has been modified.
-							</p>
-						</div>
-					</div>
-				</section>
-			</div>
-		</div>
-
-		<script src="js/reveal.js"></script>
-
-		<script>
-			Reveal.initialize({
-				history: true,
-				controls: false,
-				progress: false,
-				help: false,
-
-				dependencies: [
-					{ src: 'plugin/markdown/marked.js' },
-					{ src: 'plugin/markdown/markdown.js' },
-					{ src: 'plugin/notes/notes.js', async: true },
-					{ src: 'plugin/highlight/highlight.js', async: true },
-					{ src: 'node_modules/revealjs-animated/dist/revealjs-animated.js', async: true }
-				]
-			});
-		</script>
-	</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <title>Illuminating WordPress</title>
+
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/reveal.css" />
+
+    <link rel="stylesheet" href="css/theme/black.css" media="(prefers-color-scheme: dark)" />
+    <link rel="stylesheet" href="css/theme/white.css" media="(prefers-color-scheme: light)" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/an-old-hope.min.css"
+      media="(prefers-color-scheme: dark)"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/stackoverflow-light.min.css"
+      media="(prefers-color-scheme: light)"
+    />
+
+    <link rel="stylesheet" href="css/custom.css" />
+
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+  </head>
+
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section class="h-full">
+          <div class="h-full w-full flex flex-wrap items-center justify-center">
+            <h1 class="font-normal flex items-baseline justify-center">
+              <span class="text-6xl">
+                Illuminating
+              </span>
+
+              <span style="min-width: 12rem" class="ml-8 -mr-8">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 65 65" width="100%" height="100%" class="fill-current">
+                  <path d="M54.6 12.9L37.1 6.5 30.3 1C29.2.1 27.9-.3 26.6-.3c-1.8 0-3.4.8-4.5 2.1l-.7.8c-1 1.2-1.5 2.7-1.3 4.3.2 1.6.9 3 2.1 4l3 2.5L11 30.5c-.6-.2-1.2-.4-1.8-.4-2.5 0-4.5 2-4.5 4.5s2 4.5 4.5 4.5c.3 0 .7 0 1-.1l11.1 20.1H8.9c-1.2 0-2.3.7-2.7 1.8l-2.1 4.5H41L38.9 61c-.5-1.1-1.5-1.8-2.7-1.8H23L11.6 38.4c.1-.1.2-.1.3-.2 1.2-.9 1.9-2.2 1.9-3.7 0-1.2-.5-2.3-1.3-3.2l-.1-.1 14.1-17 2.5 2.1 9.8 15.8 4.4-5.3c.9.7 2.1 1.1 3.2 1.1 1.6 0 3-.7 4-1.9l.6-.7c1.8-2.2 1.5-5.4-.6-7.3l4.2-5.1zm-17 48.6l1.1 2.3H6.4l1.1-2.4c.2-.5.8-.9 1.3-.9h27.3c.7.1 1.2.5 1.5 1zM11 37.1c-.5.4-1.1.6-1.7.6-1.7 0-3-1.3-3-3s1.3-3 3-3c.8 0 1.6.3 2.1.9.6.6.9 1.3.9 2.1-.1.9-.5 1.8-1.3 2.4zM21.6 6.7c-.1-1.2.2-2.3 1-3.2l.7-.8c.8-1 2.1-1.6 3.4-1.6 1 0 2 .4 2.8 1l6.2 5.1-6.2 7.6-6.2-5.1c-1.1-.7-1.6-1.8-1.7-3zm8.8 9.2L36.9 8l15.2 5.5-3 3.7-10.2 12.4-8.5-13.7zm19.3 8.6l-.6.7c-.7.9-1.7 1.3-2.9 1.3-.8 0-1.6-.3-2.3-.8l5.3-6.4c1.6 1.4 1.8 3.6.5 5.2z"/>
+                  <path fill="#ff0" d="M45.5 31.5H47v5.3h-1.5zM56.074 32.98l-3.748-3.748 1.06-1.06 3.748 3.747zM55.6 21.4h5.3v1.5h-5.3z"/>
+                  <path d="M31.841 6.079l1.141.974-.974 1.14-1.14-.973zM29.577 4.078l1.141.974-.974 1.14-1.14-.973z"/>
+                </svg>
+              </span>
+
+              <span class="text-6xl">
+                WordPress
+              </span>
+            </h1>
+          </div>
+        </section>
+
+        <section>
+          <section>
+            <h1
+              class="fragment fade-in animated move-to-middle-top scale-down relative"
+              data-animated-scale-down-to="0.5"
+              data-animated-duration="300"
+              data-fragment-index="2"
+            >
+              <i class="fab fa-wordpress text-20xl block"></i>
+
+              <p
+                class="fragment fade-in-then-semi-out text-8xl hide-after-fragment-hidden flex justify-center"
+                data-fragment-index="1"
+              >
+                <span>34.9%</span>
+
+                <span class="text-4xl">*</span>
+              </p>
+            </h1>
+
+            <ul class="inline-block w-auto text-left -translate-y-32">
+              <li class="fragment fade-in-then-semi-out">
+                blog
+
+                <span class="opacity-50">(d'uh)</span>
+              </li>
+
+              <li class="fragment fade-in-then-semi-out">content management</li>
+
+              <li class="fragment fade-in-then-semi-out">e-commerce</li>
+            </ul>
+
+            <small
+              class="text-sm fragment fade-in-then-semi-out hide-after-fragment-hidden absolute top-full -translate-y-full"
+              data-fragment-index="1"
+            >
+              * as of October 1st 2019
+            </small>
+
+            <aside class="notes" data-markdown>
+              - 34.9% as of 1st of October 2019
+              - Very versatile
+              - Can be used for virtually everything
+                - blog (d'uh!)
+                - all kinds of content management
+                - e-commerce
+              - Shouldn't though
+              - Elaborate about first job:
+                - 6m daily active users
+                - WordPress CMS + clicking user frontend
+            </aside>
+          </section>
+
+          <section>
+            <h2 class="fragment">How?</h2>
+
+            <p class="fragment text-left px-48" style="margin-top: 5rem">
+              Extensive use of:
+            </p>
+
+            <ul class="text-left">
+              <li class="fragment">filters</li>
+              <li class="fragment">actions (technically also filters)</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2 class="fragment">
+              What does that look like?
+            </h2>
+
+            <pre class="fragment"><code class="php" data-trim data-noescape>
+              add_action(
+                'after_setup_theme', // action / filter name
+                [$this, 'removeZoomFromGallery'], // callback
+                99, // priority
+                2 // accepted argument count
+              );
+            </code></pre>
+          </section>
+
+          <section>
+            <h2>
+              <span class="fragment fade-in-then-semi-out">What does that look like</span>
+              <span class="fragment fade-in">in real life?</span>
+            </h2>
+
+            <pre class="fragment"><code
+              class="php"
+              data-trim data-noescape
+              style="font-size: 10px; line-height: 1;"
+            >
+              add_filter('wp_print_styles', [$this, 'dequeueUnusedAssets'], 99);
+              add_filter('wp_enqueue_scripts', [$this, 'dequeueUnusedAssets'], 99);
+              add_filter('after_setup_theme', [$this, 'removeZoomFromGallery'], 99);
+              add_filter('init', [$this, 'addProductBrandPostType']);
+              add_filter('add_meta_boxes_product_brand', [$this, 'addProductBrandMetaBoxes']);
+              add_filter('save_post', [$this, 'saveProductBrandMetaBoxData']);
+              add_filter('init', [$this, 'addProductFunctionPostType']);
+              add_filter('add_meta_boxes_product_function', [$this, 'addProductFunctionMetaBoxes']);
+              add_filter('save_post', [$this, 'saveProductFunctionMetaBoxData']);
+              add_filter('woocommerce_template_single_price', [$this, 'showPriceNotice'], 10);
+              add_filter('woocommerce_after_add_to_cart_quantity', [$this, 'showShippingMethod'], 35);
+              add_filter('woocommerce_single_product_summary', [$this, 'showDivider'], 31);
+              add_filter('woocommerce_single_product_summary', [$this, 'showReturnAndShippingInfo'], 40);
+              add_filter('woocommerce_single_product_summary', [$this, 'showDivider'], 41);
+              add_filter('woocommerce_single_product_summary', [$this, 'showPaymentGateways'], 45);
+              add_filter('woocommerce_single_product_summary', [$this, 'showDivider'], 49);
+              add_filter('woocommerce_single_product_summary', [$this, 'showInteractionButtons'], 50);
+              add_filter('woocommerce_after_single_product_summary', [$this, 'showDivider'], 10);
+              add_filter('woocommerce_after_single_product_summary', [$this, 'showDescription'], 11);
+              add_filter('woocommerce_after_single_product_summary', [$this, 'showProductDetails'], 15);
+              add_filter('woocommerce_after_single_product_summary', [$this, 'showOtherProductsFromSameBrand'], 53);
+              add_filter('woocommerce_after_single_product_summary', [$this, 'showDivider'], 54);
+              add_filter('woocommerce_after_single_product_summary', [$this, 'showFaqArea'], 55);
+              add_filter('woocommerce_after_single_product_summary', [$this, 'showDivider'], 56);
+              add_filter('woocommerce_after_single_product_summary', [$this, 'showNewsletterForm'], 60);
+              add_filter('woocommerce_single_product_image_thumbnail_html', [$this, 'showBrandLogoAndFunctionSymbol'], 10, 2);
+
+              add_filter('init', function() {
+                remove_filter('woocommerce_single_product_summary', 'woocommerce_output_product_data_tabs', 35);
+                remove_filter('woocommerce_after_single_product_summary', 'woocommerce_output_related_products', 20);
+                remove_filter('woocommerce_single_product_summary', 'sf_product_share', 45);
+                remove_filter('woocommerce_single_product_summary', 'woocommerce_template_single_meta', 40);
+                add_filter('woocommerce_after_single_product_summary', 'woocommerce_output_related_products', 50);
+              }, 99);
+            </code></pre>
+          </section>
+
+          <section>
+            <p class="text-6xl">
+              ... and that's only <strong>one</strong> feature.
+            </p>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <p class="text-6xl">
+              Downsides of
+
+              <i class="fab fa-wordpress"></i>
+            </p>
+
+            <aside class="notes" data-markdown>
+              - The way WordPress does it makes it convoluted, hard to read and hard to maintain
+            </aside>
+          </section>
+
+          <section>
+            <p
+              class="fragment animated move-to-middle-top text-6xl"
+              data-animated-duration="300"
+              data-fragment-index="1"
+            >
+              No templating engine
+            </p>
+
+            <pre class="fragment" data-fragment-index="1"><code class="php" data-trim data-noescape>
+              &lt;main id="main" class="site-main"&gt;
+                &lt;?php
+                  if ( have_posts() ) {
+                    // Load posts loop.
+                    while ( have_posts() ) {
+                      the_post();
+                      get_template_part( 'template-parts/content/content' );
+                    }
+                    // Previous/next page navigation.
+                    twentynineteen_the_posts_navigation();
+                  } else {
+                    // If no content, include the "No posts found" template.
+                    get_template_part( 'template-parts/content/content', 'none' );
+                  }
+                ?&gt;
+              &lt;/main&gt;<!-- .site-main -->
+            </code></pre>
+
+            <aside class="notes" data-markdown data-trim>
+              No templating engine
+              => raw PHP mixed with HTML
+              => hard to maintain and to write
+            </aside>
+          </section>
+
+          <section>
+            <p
+              class="fragment animated move-to-middle-top text-6xl"
+              data-animated-duration="300"
+              data-fragment-index="1"
+            >
+              hardcoded file names<br />
+              <span
+                class="fragment fade-in-then-semi-out"
+                data-fragment-index="0"
+              >
+                (more or less)
+              </span>
+            </p>
+
+            <ul
+              class="fragment text-3xl text-left"
+              data-fragment-index="1"
+            >
+              <li class="fragment highlight-red">index.php</li>
+              <li class="fragment highlight-red">style.css</li>
+              <div class="fragment highlight-blue">
+                <li class="mt-6">header.php</li>
+                <li>footer.php</li>
+                <li>404.php</li>
+                <li>comments.php</li>
+                <li class="mt-6">...</li>
+              </div>
+            </ul>
+
+            <aside class="notes" data-markdown data-trim>
+              - No (real) way to change template names. These are required:
+                - style.css (as the stylesheet)
+                - index.php (as the main template)
+              - List of recognized (= special meaning):
+                - header.php
+                - footer.php
+                - 404.php
+                - comments.php
+                - more...
+              - Can't apply custom structure
+            </aside>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <p class="text-6xl">
+              Getting <code class="text-red-700">blade</code> on board
+            </p>
+          </section>
+
+          <section>
+            <p>
+              Add required composer packages ...
+
+              <pre class="fragment mt-16"><code class="json" data-trim data-noescape>
+                {
+                  // ...
+                  "require": {
+                    "illuminate/support": "^5",
+                    "illuminate/view": "^5"
+                  }
+                  // ...
+                }
+              </code></pre>
+            </p>
+          </section>
+
+          <section>
+            <p>
+              ... and assemble.
+            </p>
+
+            <div
+              class="fragment h-full bg-current"
+              style="
+                mask: url(./img/ikea-man.png);
+                mask-size: contain;
+                mask-clip: border-box;
+                mask-position: center;
+                mask-repeat: no-repeat;
+                -webkit-mask: url(./img/ikea-man.png);
+                -webkit-mask-size: contain;
+                -webkit-mask-clip: border-box;
+                -webkit-mask-position: center;
+                -webkit-mask-repeat: no-repeat;
+              "
+            >
+              <img
+                src="./img/ikea-man.png"
+                alt="IKEA assembly man"
+                class="h-auto invisible"
+                width="170"
+              />
+            </div>
+
+            <aside class="notes" data-markdown data-trim>
+              - For everyone who doesn't know: this is the man from IKEA manuals
+            </aside>
+          </section>
+
+          <section>
+            <p class="text-6xl">
+              Register services
+            </p>
+          </section>
+
+          <section>
+            <pre class="mt-16"><code class="php" data-trim data-noescape>
+              $this->container = new \Illuminate\Container\Container;
+
+              $this->container->singleton('files', function() {
+                return new \Illuminate\Filesystem\Filesystem;
+              });
+
+              $this->container->singleton('events', function() {
+                return new \Illuminate\Events\Dispatcher;
+              });
+            </code></pre>
+
+            <aside class="notes" data-markdown data-trim>
+              - The Filesystem is needed for obvious reasons
+              - The event system is needed for some internal event mechanisms, e.g. for view composers
+            </aside>
+          </section>
+
+          <section>
+            <pre class="mt-16"><code class="php" data-trim data-noescape>
+              $this->container->singleton('blade.compiler', function() {
+                return new \Illuminate\View\Compilers\BladeCompiler(
+                  $this->container['files'], // Filesystem
+                  $this->cachePath // Configured value
+                );
+              });
+            </code></pre>
+
+            <aside class="notes" data-markdown data-trim>
+              - Here we register the engines for both, `.php` and `.blade.php` files
+              - As well as the resolver to invoke the right engine for the requested file
+            </aside>
+          </section>
+
+          <section>
+            <pre class="mt-16"><code class="php" data-trim data-noescape>
+              $this->container->singleton('view.engine.resolver', function() {
+                $resolver = new \Illuminate\View\Engines\EngineResolver;
+                <span class="fragment">
+                $resolver->register('php', function() {
+                  return new \Illuminate\View\Engines\PhpEngine;
+                });
+                </span><span class="fragment">
+                $resolver->register('blade', function() {
+                  return new \Illuminate\View\Engines\CompilerEngine(
+                    $this->container['blade.compiler'],
+                    $this->container['files'] // Filesystem
+                  );
+                });
+                </span>
+                return $resolver;
+              });
+            </code></pre>
+
+            <aside class="notes" data-markdown data-trim>
+              - Here we register the engines for both, `.php` and `.blade.php` files
+              - As well as the resolver to invoke the right engine for the requested file
+            </aside>
+          </section>
+
+          <section>
+            <pre class="mt-16"><code class="php" data-trim data-noescape>
+              $this->container->singleton('view.finder', function() {
+                return new FileViewFinder(
+                  $this->container['files'], // Filesystem
+                  $this->viewPaths // Configured value
+                );
+              });
+            </code></pre>
+
+            <aside class="notes" data-markdown data-trim>
+              -
+            </aside>
+          </section>
+
+          <section>
+            <pre class="mt-16"><code class="php" data-trim data-noescape>
+              $this->factory = new Factory(
+                $this->container['view.engine.resolver'],
+                $this->container['view.finder'],
+                $this->container['events']
+              );
+
+              $this->factory->setContainer($this->container);
+            </code></pre>
+
+            <aside class="notes" data-markdown data-trim>
+              - Build the factory which will ultimately return the views
+            </aside>
+          </section>
+
+          <section>
+            <h3>
+              <span class="fragment fade-in-then-semi-out">
+                Done
+              </span>
+
+              <span class="fragment">
+                (almost)
+              </span>
+            </h3>
+          </section>
+
+          <section>
+            <p class="text-6xl">
+              At least we can do this now:
+            </p>
+
+            <pre class="mt-16"><code class="php" data-trim data-noescape style="font-size: 1.5rem; line-height: 2.2;">
+              echo $this->factory
+                ->make('my.view')
+                ->render()
+            </code></pre>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <p class="fragment text-6xl fade-in-then-semi-out">
+              Okay, we have pretty views.
+            </p>
+
+            <p class="fragment text-6xl">
+              What now?
+            </p>
+
+            <aside class="notes" data-markdown data-trim>
+              - We still haven't solved the problem of the arbitrary names and structure of the theme
+            </aside>
+          </section>
+
+          <section>
+            <p class="text-6xl fragment">Problems:</p>
+
+            <ul>
+              <li class="fragment">Arbitrary names</li>
+              <li class="fragment">No way to configure them</li>
+              <li class="fragment mt-8">... but there is a solution:</li>
+            </ul>
+
+            <aside class="notes" data-markdown data-trim>
+              - WordPress uses arbitrary names to designate meaning to some files
+            </aside>
+          </section>
+
+          <section>
+            <img
+              src="/img/hackerman.webp"
+              alt="Hackerman"
+              style="margin: 2rem auto; border: 0;"
+            />
+          </section>
+
+          <section>
+            <p class="text-5xl fragment fade-in-then-semi-out">Simplified WordPress life cycle</p>
+
+            <p class="fragment mt-20">Check URL</p>
+
+            <div class="fragment">
+              <span class="text-center block text-6xl">&darr;</span>
+
+              <p>Determine kind of data</p>
+            </div>
+
+            <div class="fragment">
+              <span class="text-center block text-6xl">&darr;</span>
+
+              <p>Determine template to load</p>
+            </div>
+
+            <aside class="notes" data-markdown data-trim>
+              - Take a look at the URL
+              - Determine the kind of data we'll fetch from the database
+              - Decide which template to load / fallback to
+            </aside>
+          </section>
+
+          <section>
+            <pre class="mt-16"><code class="php" data-trim data-noescape style="line-height: 2.2; font-size: 1.5rem">
+              apply_filter(
+                "{$type}_template",
+                string $template,
+                string $type,
+                array $templates
+              )
+            </code></pre>
+
+            <p class="mt-6 text-6xl">... to the rescue</p>
+
+            <aside class="notes" data-markdown data-trim>
+              - WordPress can be intercepted when trying to get the right template file
+              - Type, e.g.:
+                - index
+                - 404
+                - archive
+                - author
+                - category
+                - ...
+            </aside>
+          </section>
+
+          <section>
+            <pre><code class="php" data-trim data-noescape style="font-size: 1.4rem; line-height: 1.6;">
+              // Default supported types by WordPress:
+              $templateTypes = [
+                'index', '404', 'archive', 'author', 'category',
+                'taxonomy', 'date', 'embed', 'home', 'frontpage',
+                'privacypolicy', 'page', 'paged', 'search',
+                'singular', 'attachment', 'single', 'tag',
+              ];
+
+              foreach($templateTypes as $templateType) {
+                add_filter(
+                  "{$templateType}_template",
+                  fn($template, $type, $templates) =>
+                    $this->handleTemplateRequest($template),
+                  99,
+                  3
+                );
+              }
+            </code></pre>
+
+            <aside class="notes" data-markdown data-trim>
+              - Just add a filter for every template type there is, yay
+            </aside>
+          </section>
+
+          <section>
+            <pre class="mt-16"><code class="php" data-trim data-noescape style="font-size: 1.4rem; line-height: 1.6;">
+              public function handleTemplateRequest($template) {
+                $this->desiredTemplate = $template;
+
+                <span class="fragment">// Here we can decide if we want to intercept or not.
+                // Now we have full flexibility with naming, etc. Yay!
+                if (
+                  get_option('maintenance_mode', false) &&
+                  !is_user_logged_in()
+                ) {
+                  $this->desiredTemplate = 'pages.maintenance';
+                }</span>
+
+                <span class="fragment">return dirname(__DIR__) . '/index.php';</span>
+              }
+            </code></pre>
+
+            <aside class="notes" data-markdown data-trim>
+              - Just save the desired template or assign a new one
+              - And then let's return the (anyway required) `index.php` template
+            </aside>
+          </section>
+
+          <section>
+            <h3>
+              Almost there!
+            </h3>
+          </section>
+
+          <section>
+            <p class="text-6xl">
+              the full <code class="text-5xl ml-2">index.php</code>
+            </p>
+
+            <pre class="mt-16"><code class="php" data-trim style="font-size: 1.4rem; line-height: 1.6;">
+              &lt;?php
+
+              // Make sure we have no direct contact
+              !defined('ABSPATH') && die('Safety first!');
+
+              // Render page
+              echo \IlluminatedWordPressTheme\TemplatePage::render();
+            </code></pre>
+
+            <aside class="notes" data-markdown data-trim>
+              - Safety there, because of the way WordPress handles templates / themes, etc (all publicly available)
+            </aside>
+          </section>
+
+          <section>
+            <pre class="mt-16"><code class="php" data-trim data-noescape style="font-size: 1.4rem; line-height: 1.6;">
+              namespace IlluminatedWordPressTheme;
+
+              class TemplatePage {
+                private $template;
+
+                private function __construct($template) {
+                  $this->template = $template;
+                }
+
+                public static function render() {
+                  // The class that registered all the filters
+                  $template = ViewController::getInstance()->getTemplate();
+
+                  return (new static($template))->renderPage();
+                }
+              }
+            </code></pre>
+          </section>
+
+          <section>
+            <pre class="mt-16"><code class="php" data-trim data-noescape style="font-size: 1.4rem; line-height: 1.6;">
+              public function renderPage() {
+                $data = $this->getData();
+
+                if (!View::make()->exists("templates.{$this->template}")) {
+                  $this->template = 'index';
+                }
+
+                return View::view("templates.{$this->template}")
+                  ->with($data)
+                  ->render();
+              }
+            </code></pre>
+          </section>
+        </section>
+
+        <section>
+          <p class="text-8xl text-center">
+            We solved our problems and made our lives easier.<br />
+            <i class="fas fa-smile-beam"></i>
+            <i class="fas fa-smile-beam"></i>
+            <i class="fas fa-smile-beam"></i>
+          </p>
+        </section>
+
+        <section class="h-full">
+          <div class="h-full text-left flex-wrap content-between flex py-12">
+            <div>
+              <h1>
+                <span class="text-6xl">Sebastian Wasser</span>
+              </h1>
+
+              <p class="align-middle">
+                <i class="fab fa-github"></i><code>/sebwas</code>
+              </p>
+            </div>
+
+            <div>
+              <h5 class="leading-none">
+                <span class="text-2xl">Attributions & sources:</span>
+              </h5>
+
+              <p class="text-lg -mt-4" data-markdown>
+                WordPress share: [https://w3techs.com/technologies/details/cm-wordpress/all/all](https://w3techs.com/technologies/details/cm-wordpress/all/all)
+              </p>
+
+              <p class="text-lg -mt-4" data-markdown>
+                Table lamp by Creative Stall from [the Noun Project](https://thenounproject.com/search/?q=desk%20lamp&i=981470). The original work has been modified.
+              </p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <script src="js/reveal.js"></script>
+
+    <script>
+      Reveal.initialize({
+        history: true,
+        controls: false,
+        progress: false,
+        help: false,
+
+        dependencies: [
+          { src: 'plugin/markdown/marked.js' },
+          { src: 'plugin/markdown/markdown.js' },
+          { src: 'plugin/notes/notes.js', async: true },
+          { src: 'plugin/highlight/highlight.js', async: true },
+          { src: 'node_modules/revealjs-animated/dist/revealjs-animated.js', async: true }
+        ]
+      });
+    </script>
+  </body>
 </html>
