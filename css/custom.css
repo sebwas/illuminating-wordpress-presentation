@@ -457,6 +457,12 @@ video {
 .absolute{
   position: absolute;
 }
+.relative{
+  position: relative;
+}
+.top-full{
+  top: 100%;
+}
 .-mr-8{
   margin-right: -2rem;
 }
@@ -517,6 +523,14 @@ video {
 }
 .w-full{
   width: 100%;
+}
+.-translate-y-32{
+  --tw-translate-y: -8rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+.-translate-y-full{
+  --tw-translate-y: -100%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 .transform{
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -581,6 +595,10 @@ video {
   font-size: 1.875rem;
   line-height: 2.25rem;
 }
+.text-4xl{
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
 .text-5xl{
   font-size: 3rem;
   line-height: 1;
@@ -596,6 +614,10 @@ video {
   font-size: 1.125rem;
   line-height: 1.75rem;
 }
+.text-sm{
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
 .font-normal{
   font-weight: 400;
 }
@@ -605,6 +627,9 @@ video {
 .text-red-700{
   --tw-text-opacity: 1;
   color: rgb(185 28 28 / var(--tw-text-opacity));
+}
+.opacity-50{
+  opacity: 0.5;
 }
 .blur{
   --tw-blur: blur(8px);
