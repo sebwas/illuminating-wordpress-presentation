@@ -3,15 +3,17 @@
 @tailwind utilities;
 
 @import '/node_modules/@fortawesome/fontawesome-free/css/all.css';
-@import '/node_modules/highlight.js/styles/an-old-hope.css';
 @import './font.css';
 
 .reveal {
-    .fas, .far, .fab {
+
+    .fas,
+    .far,
+    .fab {
         font-weight: normal !important;
     }
 
-    .slides section h2[data-vertical-align-top]{
+    .slides section h2[data-vertical-align-top] {
         top: 0 !important;
     }
 
