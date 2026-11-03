@@ -1,4 +1,4 @@
-@import url(./font.css);
+@import './font.css';
 /*
 ! tailwindcss v3.3.2 | MIT License | https://tailwindcss.com
 */
@@ -645,11 +645,11 @@ video {
 .reveal .fas,
 .reveal .far,
 .reveal .fab {
-  font-weight: normal !important; }
-
+  font-weight: normal !important;
+}
 .reveal .slides section h2[data-vertical-align-top] {
-  top: 0 !important; }
-
+  top: 0 !important;
+}
 .reveal pre{
   margin: 1rem;
   margin-top: 3rem;
@@ -658,8 +658,9 @@ video {
   font-size: 1rem;
   line-height: 1.5rem;
 }
-  .reveal pre code {
-    padding: 1rem;
-    line-height: 1.5;
-    font-family: 'Fira Code', monospace !important;
-    max-height: 100%; }
+.reveal pre code {
+  padding: 1rem;
+  line-height: 1.5;
+  font-family: "Fira Code", monospace !important;
+  max-height: 100%;
+}

@@ -31,11 +31,11 @@
     "highlight.js": "^11.8.0",
     "load-grunt-tasks": "^5.1.0",
     "mustache": "^4.2.0",
-    "node-sass": "^9.0.0",
     "socket.io": "^4.6.2"
   },
   "dependencies": {
     "revealjs-animated": "^1.2.2",
+    "sass": "^1.107.1",
     "tailwindcss": "^3.3.2"
   }
 }
