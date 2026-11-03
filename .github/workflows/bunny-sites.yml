@@ -18,7 +18,7 @@ jobs:
     steps:
       - uses: actions/checkout@v7
 
-      - run: npm install
+      - run: yarn install
 
       - uses: BunnyWay/actions/deploy-site@deploy-site_0.1.2
         with:
